@@ -24,7 +24,6 @@ class DataViewModel {
     
     func getData(size : String){
         showLoading?()
-        
         apiService.getVehicalData(size: size) { results, error in
             self.hideLoading?()
             if error != nil {
